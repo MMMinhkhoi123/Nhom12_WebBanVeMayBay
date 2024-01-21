@@ -1,4 +1,4 @@
-# Hướng dẫn cài đặt  web đặt vé máy bay
+# Hướng dẫn cài đặt  web đặt vé máy bay (code lỗi chưa update note)
 - CÀI MÔI TRƯỜNG CHẠY
   + Docker : (tại đây) https://docs.docker.com/desktop/install/windows-install/
 - CÀI FILE DỮ LIỆU
