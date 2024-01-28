@@ -96,7 +96,7 @@
 
       - để kiểm tra id tài khoản :
  
-          select id,email from user
+            select id,email from user
              
    ![image](https://github.com/MMMinhkhoi123/Nhom12_WebBanVeMayBay/assets/118420965/be225e4d-d837-474f-9b70-c4558f8b0ac6)
 # Sử dụng
