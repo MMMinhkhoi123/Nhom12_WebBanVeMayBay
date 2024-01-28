@@ -82,19 +82,25 @@
           insert into role(name) values ("user"),("creater"),("checker");
     
     ![image](https://github.com/MMMinhkhoi123/Nhom12_WebBanVeMayBay/assets/118420965/7f74e753-7fd8-4e16-b796-592566d0caf2)
-    * Thêm tài khoản quản lý bẳng cú pháp sau:
-      
-            INSERT INTO user (email,fullname,PASSWORD,phone,verify) 
-            VALUES ("creater@gmail.com","Creater","Creater@123","0329999999",1),
-                   ("checker@gmail.com","Checker","Checker@123","0329999999",1);
-      
-    ![image](https://github.com/MMMinhkhoi123/Nhom12_WebBanVeMayBay/assets/118420965/ebfbcaf5-b40d-43f2-85f0-35e8c969a605)
-    * Cấp quyền cho tài khoản bằng cú pháp sau:
-    
-          INSERT INTO users_roles (user_id, role_id)  VALUES (1, 2),(2,3);
-    
-    ![image](https://github.com/MMMinhkhoi123/Nhom12_WebBanVeMayBay/assets/118420965/82c03031-fa03-4c4e-b6e6-e4642bcaf6fe)
+    * Tạo tài khoản sữ dụng:
+      - Truy cập đường dẫn đăng ký tài khoảng : http://localhost:8080/#/acount/signip (Đăng ký một tài khoản bất kỳ)
+      - |Sau đó đổi quyền của tài khoản này:
+      - Đổi thành user create (role = 2)
+        
+            Update users_roles set role_id = 2 where user_id = 1;
+        
+      - Đổi thành user checker (role = 3)
+        
+            Update users_roles set role_id = 3 where user_id = 1;
+      ***Lưu ý (user_id) ở đây chính là key id của tài khoản được tạo , nếu tạo thêm 1 tài khoản nữa thì key id = 2.
 
+      - để kiểm tra id tài khoản :
+ 
+          select id,email from user
+             
+   ![image](https://github.com/MMMinhkhoi123/Nhom12_WebBanVeMayBay/assets/118420965/be225e4d-d837-474f-9b70-c4558f8b0ac6)
+# Sử dụng
+  - Url ứng dụng: http://localhost:8080/#/
 
 # khác
 - Link Tài khoản thanh toán : https://sandbox.vnpayment.vn/apis/vnpay-demo/
